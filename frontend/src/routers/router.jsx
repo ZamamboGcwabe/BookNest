@@ -1,4 +1,10 @@
 import {createBrowserRouter} from "react-router-dom";
+import App from "../App";
+import Login from "../components/Login";
+import Home from "../pages/home/Home";
+import Register from "../components/Register";
+import CartPage from "../pages/books/CheckoutPage";
+import SingleBook from "../pages/books/SingleBook"
 
 const router = createBrowserRouter([
     {
