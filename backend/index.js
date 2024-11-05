@@ -15,7 +15,7 @@ async function main() {
     })
 }
 
-main().then(() => console,log("MongoDB connected!")).catch(err => console.log(err));
+main().then(() => console.log("MongoDB connected!")).catch(err => console.log(err));
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
