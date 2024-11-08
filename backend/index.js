@@ -10,7 +10,7 @@ require('dotenv').config()
 
 async function main() {
     await mongoose.connect(process.env.DB_URL);
-    app,use("/", (req, res) => {
+    app.use("/", (req, res) => {
         res.send("BookNest is up and running!");
     })
 }
