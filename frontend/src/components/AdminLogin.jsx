@@ -68,7 +68,7 @@ return (
                 </div>
             </form>
 
-            <p className='mt-5 text-center text-gray-500 text-xs'>©2025 Book Store. All rights reserved.</p>
+            <p className='mt-5 text-center text-gray-500 text-xs'>©2025 BookNest. All rights reserved.</p>
         </div>
     </div>
 )
