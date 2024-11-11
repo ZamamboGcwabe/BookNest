@@ -19,7 +19,7 @@ const userRoutes = require("./src/users/user.route")
 const adminRoutes = require("./src/stats/admin.stats")
 
 app.use("/api/books", bookRoutes)
-app.use("/app/orders", orderRoutes)
+app.use("/api/orders", orderRoutes)
 app.use("/api/auth", userRoutes)
 app.use("/api/admin", adminRoutes)
 
