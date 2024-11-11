@@ -13,7 +13,7 @@ import BookCard from '../books/BookCard';
 import { useFetchAllBooksQuery } from '../../redux/features/books/booksApi';
 
 
-const Recommened = () => {
+const Recommended = () => {
 
 
     const { data: books = [] } = useFetchAllBooksQuery();
@@ -63,4 +63,4 @@ const Recommened = () => {
     )
 }
 
-export default Recommened
+export default Recommended
