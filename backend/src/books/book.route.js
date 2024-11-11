@@ -12,7 +12,7 @@ router.get("/", getSingleBook);
 
 router.put("/edit/:id", verifyAdminToken, UpdateBook);
 
-router.delete("/:id", verifyAdminToken, deleteBook)
+router.delete("/:id", verifyAdminToken, deleteABook)
 
 
 module.exports = router;

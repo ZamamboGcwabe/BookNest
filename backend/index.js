@@ -9,10 +9,15 @@ require('dotenv').config()
 
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5173", 'https://book-nest-d4lt.vercel.app']
+    origin: ["http://localhost:5173", 'https://book-nest-d4lt.vercel.app'],
+    credentials: true
 }))
 
 const bookRoutes = require('./src/books/book.route')
+const orderRoutes = require("./src/orders/order.route")
+const userRoutes = require("./src/users/user.route")
+const adminRoutes = require("./src/stats/admin.stats")
+
 app.use("/api/books", bookRoutes)
 app.use("/app/orders", orderRoutes)
 app.use("/api/auth", userRoutes)
