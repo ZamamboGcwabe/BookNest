@@ -34,4 +34,4 @@ main().then(() => console.log("MongoDB connected!")).catch(err => console.log(er
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
-})
+});
