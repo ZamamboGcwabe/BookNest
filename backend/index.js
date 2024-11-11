@@ -9,7 +9,7 @@ require('dotenv').config()
 
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:"]
+    origin: ["http://localhost:5173/"]
 }))
 
 const bookRoutes = require('./src/books/book.route')
