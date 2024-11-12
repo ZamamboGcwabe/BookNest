@@ -1,11 +1,11 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Login from "../components/Login";
 import Home from "../pages/home/Home";
+import Login from "../components/Login";
 import Register from "../components/Register";
-import CartPage from "../pages/books/CheckoutPage";
-import SingleBook from "../pages/books/SingleBook"
+import CartPage from "../pages/books/CartPage";
 import CheckoutPage from "../pages/books/CheckoutPage";
+import SingleBook from "../pages/books/SingleBook";
 import PrivateRoute from "./PrivateRoute";
 import OrderPage from "../pages/books/OrderPage";
 import AdminRoute from "./AdminRoute";
@@ -20,77 +20,77 @@ import UserDashboard from "../pages/dashboard/users/UserDashboard";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App/>,
+        element: <App />,
         children: [
             {
                 path: "/",
-                element: <h1>Home</h1>
+                element: <Home />,
             },
             {
                 path: "/orders",
-                element: <PrivateRoute><OrderPage/></PrivateRoute>
+                element: <PrivateRoute><OrderPage /></PrivateRoute>
             },
             {
                 path: "/about",
                 element: <div>About</div>
-
             },
             {
                 path: "/login",
-                element: <Login/>
+                element: <Login />
             },
             {
                 path: "/register",
-                element: <Register/>
+                element: <Register />
             },
             {
                 path: "/cart",
-                element: <CartPage/>
+                element: <CartPage />
             },
             {
                 path: "/checkout",
-                element: <PrivateRoute><CheckoutPage/></PrivateRoute>
+                element: <PrivateRoute><CheckoutPage /></PrivateRoute>
             },
             {
                 path: "/books/:id",
-                element: <SingleBook/>
+                element: <SingleBook />
             },
             {
                 path: "/user-dashboard",
-                element: <PrivateRoute><UserDashboard/></PrivateRoute>
+                element: <PrivateRoute><UserDashboard /></PrivateRoute>
             }
+
         ]
     },
     {
         path: "/admin",
-        element: <AdminLogin/>
+        element: <AdminLogin />
     },
     {
         path: "/dashboard",
         element: <AdminRoute>
-            <DashboardLayout/>
+            <DashboardLayout />
         </AdminRoute>,
-        children:[
+        children: [
             {
                 path: "",
-                element: <AdminRoute><Dashboard/></AdminRoute>
+                element: <AdminRoute><Dashboard /></AdminRoute>
             },
             {
                 path: "add-new-book",
                 element: <AdminRoute>
-                    <AddBook/>
-                </AdminRoute>
-            },
-            {
-                path: "manage-books",
-                element: <AdminRoute>
-                    <ManageBooks/>
+                    <AddBook />
                 </AdminRoute>
             },
             {
                 path: "edit-book/:id",
                 element: <AdminRoute>
-                    <UpdateBook/>
+                    <UpdateBook />
+                </AdminRoute>
+            },
+            {
+                path: "manage-books",
+                element: <AdminRoute>
+                    <ManageBooks />
                 </AdminRoute>
             }
         ]
