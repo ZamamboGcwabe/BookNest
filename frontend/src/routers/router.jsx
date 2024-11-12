@@ -5,6 +5,17 @@ import Home from "../pages/home/Home";
 import Register from "../components/Register";
 import CartPage from "../pages/books/CheckoutPage";
 import SingleBook from "../pages/books/SingleBook"
+import CheckoutPage from "../pages/books/CheckoutPage";
+import PrivateRoute from "./PrivateRoute";
+import OrderPage from "../pages/books/OrderPage";
+import AdminRoute from "./AdminRoute";
+import AdminLogin from "../components/AdminLogin";
+import DashboardLayout from "../pages/dashboard/DashboardLayout";
+import Dashboard from "../pages/dashboard/Dashboard";
+import ManageBooks from "../pages/dashboard/manageBooks/ManageBooks";
+import AddBook from "../pages/dashboard/addBook/AddBook";
+import UpdateBook from "../pages/dashboard/EditBook/UpdateBook";
+import UserDashboard from "../pages/dashboard/users/UserDashboard";
 
 const router = createBrowserRouter([
     {
