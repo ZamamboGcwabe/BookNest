@@ -19,4 +19,5 @@ Technologies Used
 - **Deployment**: Vercel
 
 This project currently only runs on localhost!!!
+To run the project, use npm run dev command.
 
