@@ -1,0 +1,9 @@
+exclude:
+  - backend/
+  - node_modules/
+  - package*.json
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - README.md  # if you don't want it built
